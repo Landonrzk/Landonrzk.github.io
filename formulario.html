@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Registro en Fortnite Notice</h1>
+        <a href="index.html"><button>Volver a inicio</button></a>
+    </header>
+
+    <main>
+        <section class="formulario">
+            <h2>Llena tus datos para recibir noticias personalizadas</h2>
+            <form action="confirmacion.html" method="get">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required> <br>
+                <br> 
+                <label for="telefono">Teléfono:</label>
+                <input id="telefono" name="telefono" type="number" placeholder="123-456-7890">
+                <br><br>
+                <label for="email">Correo:</label>
+                <input type="email" id="email" name="email" placeholder="ejemplo@gmail.com" required> <br>
+                <br>
+                <label for="contraseña">Contraseña</label>
+                <input id="Contraseña" name="Contraseña" type="password" placeholder="ingresa tu contraseña"> <br><br>
+                <label for="edad">Edad:</label>
+                <input id="edad" name="edad" type="number" min="1" max="100">
+                <br><br>
+                <label for="genero">Genero:</label>
+                <input type="radio" id="MASCULINO" name="GENERO" value="masculino">
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="femenino" name="GENERO" value="femenino">
+                <label for="femnino">Femenino</label> 
+                <br><br>
+                <label for="agradoDeporte">¿Cuánto te gusta jugar Fortnite?</label>
+                <input id="agradoDeporte" name="agradoDeporte" type="range" min="0" max="10" value="5" oninput="
+                agradoValor.value = agradoDeporte.value">
+                <output id="agradoValor">5</output>
+                <br><br>
+                <label for="selecciona tus intereses">¿Cuáles son los modos de juego que más juegas?</label><br>
+                <input type="checkbox" id="modo" name="intereses" value="deporte">
+                <label for="deporte">SOLO</label>
+                <input type="checkbox" id="musica" name="intereses" value="musica">
+                <label for="musica">DUOS</label>
+                <input type="checkbox" id="cine" name="intereses" value="cine">
+                <label for="cine">TRIOS</label>
+                <input type="checkbox" id="cine" name="intereses" value="cine">
+                <label for="cine">ESCUADRON</label>
+                 <br><br>
+                <input type="submit" value="Registrarse">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Fortnite Salvador y Landon</p>
+    </footer>
+
+</body>
+</html>

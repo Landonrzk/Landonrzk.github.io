@@ -1,0 +1,293 @@
+/* --- ESTILO GENERAL --- */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0A0A0A; /* Negro elegante */
+    color: #E0E0E0; /* Gris claro */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- MENÚ SUPERIOR --- */
+nav {
+    background-color: rgba(20, 20, 20, 0.95); /* Oscuro con ligera transparencia */
+    padding: 15px 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo en la esquina superior izquierda */
+.logo {
+    width: 50px; /* Tamaño del logo */
+    height: 50px;
+    border-radius: 10%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.extra-img {
+    width: 120px;
+    height: auto;
+    margin-right: 640px; /* Alinea mejor la imagen extra a la derecha del logo */
+}
+
+/* --- MENÚ DESPLEGABLE --- */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #E0E0E0;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
+/* --- BANNER CON SLIDER --- */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 550px;
+    margin-top: 60px;
+    overflow: hidden;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    display: none;
+    filter: brightness(0.7);
+}
+
+.slider img:first-child {
+    display: block;
+}
+
+/* --- TITULOS IMPONENTES --- */
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 3px 3px 6px rgba(255, 255, 255, 0.2);
+    position: relative;
+    margin-top: 120px;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #bbbbbb;
+    margin-bottom: 20px;
+}
+
+/* --- SECCIONES (Para que Registro se vea completo) --- */
+.seccion {
+    display: none;
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+    min-height: 80vh; /* Cada sección tiene al menos el 80% de la pantalla */
+}
+
+.activa {
+    display: block;
+}
+
+/* --- BOTÓN DE DESCARGA --- */
+.boton-instalar {
+    display: inline-block;
+    background-color: #C2C6CF;
+    color: black;
+    padding: 0.3px 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.boton-descarga:hover {
+    background-color: #005F99;
+}
+
+.boton-registro {
+    display: inline-block;
+    background-color: #C2C6CF;
+    color: black;
+    padding: 0.3px 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.boton-descarga:hover {
+    background-color: #005F99;
+}
+
+/* --- ESTILO DE ARTÍCULOS --- */
+article {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 5px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.05);
+}
+
+article img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* --- ESTILO DE LAS IMÁGENES DE LOS MODOS DE JUEGO --- */
+.modo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.imagen-modo {
+    width: 90%; /* Ajusta el tamaño sin desbordar */
+    max-width: 400px; /* Evita que sean demasiado grandes */
+    height: auto;
+    border-radius: 10px;
+}
+
+/* --- TABLA DE CRECIMIENTO --- */
+table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+th {
+    background-color: rgba(50, 50, 50, 0.9);
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* --- PIE DE PÁGINA --- */
+footer {
+    background-color: rgba(20, 20, 20, 0.9);
+    padding: 20px;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 16px;
+    color: #888888;
+}
+
+/* --- EVITAR DESBORDAMIENTOS --- */
+html, body {
+    overflow-x: hidden; /* Evita que haya desbordamiento horizontal */
+}
+
+/* --- MENÚ DESPLEGABLE (Solo en móviles) --- */
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #222;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    text-align: center;
+}
+
+.mobile-menu.active {
+    display: flex; /* Muestra el menú cuando se active con JS */
+}
+
+.mobile-menu a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-top: 1px solid #444;
+}
+
+.menu-toggle.open {
+    transform: rotate(90deg); /* Gira el icono para indicar que está activo */
+    transition: transform 0.3s ease;
+}
+
+.mobile-menu a:hover {
+    background-color: #333;
+}
+
+/* --- BOTÓN HAMBURGUESA --- */
+.menu-toggle {
+    display: none; /* Esconde el botón por defecto */
+    cursor: pointer;
+    font-size: 30px;
+    color: white;
+}
+
+/* --- ESTILOS RESPONSIVOS (MÓVILES) --- */
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        justify-content: flex-start; /* Alinea todos los elementos a la izquierda */
+        align-items: center;
+    }
+
+    .menu-toggle {
+        display: block; /* Muestra el botón hamburguesa en dispositivos móviles */
+        margin-right: 15px; /* Separación entre el botón y el logo */
+    }
+
+    .logo {
+        margin-left: 10px;
+        margin-right: 0;
+    }
+
+    .extra-img {
+        margin-left: 10px; /* Alinea la imagen extra mejor */
+    }
+
+    /* El menú se esconde por defecto en móviles */
+    .nav-links {
+        display: none;
+    }
+
+    /* Cuando el menú móvil está activo */
+    .mobile-menu.active {
+        display: flex; /* Muestra el menú móvil cuando está activo */
+    }
+}

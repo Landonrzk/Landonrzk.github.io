@@ -1,0 +1,183 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortnite Salva y Landon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <!-- Menú superior con logo -->
+        <nav>
+            <img src="logo.JPG" alt="Logo Fortnite" class="logo">
+            <img src="fortnite.png" alt="Imagen Extra" class="extra-img">
+
+            <!-- Menú normal (Laptop) -->
+            <ul class="nav-links">
+                <li><a href="#" onclick="mostrarSeccion('historia')">Historia</a></li>
+                <li><a href="#" onclick="mostrarSeccion('articulo')">Artículos</a></li>
+                <li><a href="#" onclick="mostrarSeccion('comparacion')">Crecimiento</a></li>
+                <li><a href="#" onclick="mostrarSeccion('modos')">Modos</a></li>
+                <li><a href="https://www.fortnite.com/download?lang=es-ES" target="_blank" class="boton-instalar">Instalar</a></li>
+                <li><a href="formulario.html" class="boton-registro">Registro</a></li>
+            </ul>
+
+            <!-- Botón menú hamburguesa (Móvil) -->
+            <button class="menu-toggle">&#9776;</button>
+
+            <!-- Menú desplegable (Móvil) -->
+            <ul class="mobile-menu">
+                <li><a href="#" onclick="mostrarSeccion('historia')">Historia</a></li>
+                <li><a href="#" onclick="mostrarSeccion('articulo')">Artículos</a></li>
+                <li><a href="#" onclick="mostrarSeccion('comparacion')">Crecimiento</a></li>
+                <li><a href="#" onclick="mostrarSeccion('modos')">Modos</a></li>
+                <li><a href="https://www.fortnite.com/download?lang=es-ES" target="_blank">Instalar</a></li>
+                <li><a href="formulario.html">Registro</a></li>
+            </ul>
+        </nav>
+
+        <!-- Carrusel de imágenes -->
+        <div class="banner">
+            <div class="slider">
+                <img src="1.PNG" class="slide">
+                <img src="2.PNG" class="slide">
+                <img src="3.PNG" class="slide">
+                <img src="4.PNG" class="slide">
+                <img src="5.PNG" class="slide">
+            </div>
+            
+        </div>
+    </header>
+
+    <main>
+        <section id="historia" class="seccion activa">
+            <h2>Historia del Juego</h2>
+            <p>Fortnite es un videojuego desarrollado por Epic Games y lanzado en 2017. <br> 
+            Desde su lanzamiento, ha logrado convertirse en uno de los juegos más populares del mundo. <br><br> 
+
+            El juego se divide en tres modos principales: <br> 
+            <strong>Fortnite: Battle Royale</strong>, donde 100 jugadores compiten para ser el último en pie. <br> 
+            <strong>Fortnite: Salvar el Mundo</strong>, un modo cooperativo donde los jugadores luchan contra oleadas de enemigos controlados por la IA. <br> 
+            <strong>Fortnite: Modo Creativo</strong>, que permite a los jugadores diseñar sus propios mundos y experiencias. <br><br> 
+
+            El éxito de Fortnite se debe en gran parte a sus constantes actualizaciones y colaboraciones con franquicias populares, <br> 
+            como Marvel, DC, Star Wars, y artistas como Travis Scott y Marshmello. <br> 
+            También ha innovado en la industria con eventos en vivo dentro del juego. <br><br> 
+
+            A lo largo de los años, Fortnite ha evolucionado con nuevas temporadas y capítulos, <br> 
+            introduciendo cambios en el mapa, nuevas mecánicas y skins exclusivas. <br> 
+            Su impacto en la cultura gaming ha sido enorme, convirtiéndolo en un fenómeno global. <br><br> 
+
+            Actualmente, Fortnite sigue siendo uno de los títulos más jugados y relevantes en la industria de los videojuegos. <br> 
+            Epic Games continúa desarrollando contenido innovador, manteniendo a la comunidad activa y comprometida. <br> </p>
+        </section>
+
+        <section id="articulo" class="seccion">
+            <h2>Artículos Destacados</h2>
+            <article class="post">
+                <h3>Concierto de Travis Scott</h3>
+                <p>En abril de 2020, Fortnite y Travis Scott colaboraron para presentar el evento "Astronomical", una experiencia musical dentro del juego. <br>
+Durante el evento, los jugadores fueron transportados a un mundo psicodélico en el que una versión gigantesca de Travis Scott interpretó algunos de sus mayores éxitos. <br>
+Incluyó el estreno exclusivo de "THE SCOTTS", una canción junto a Kid Cudi. <br><br>
+
+El concierto destacó por sus efectos visuales innovadores, como transiciones entre dimensiones y cambios de gravedad. <br>
+Se realizaron varias presentaciones en diferentes horarios para que jugadores de todo el mundo pudieran disfrutarlo. <br><br>
+
+"Astronomical" rompió récords de audiencia en Fortnite con más de 12.3 millones de jugadores simultáneos. <br>
+Este evento consolidó a Fortnite como una plataforma de entretenimiento más allá del battle royale. <br> </p>
+                <img src="travis.JPG" class="imagen-modo"> 
+            </article>
+
+            <article class="post">
+                <h3>Concierto de Marshmello</h3>
+                <p>El 2 de febrero de 2019, Fortnite celebró su primer concierto en vivo dentro del juego con el DJ y productor Marshmello. <br>
+El evento, realizado en Parque Placentero, fue pionero en la integración de experiencias musicales interactivas en un videojuego. <br><br>
+
+Durante el espectáculo, los jugadores experimentaron efectos de luces sincronizados con la música, cambios en la gravedad y un entorno seguro sin combates. <br>
+Esto permitió que todos disfrutaran del concierto sin interrupciones. <br><br>
+
+El evento atrajo a más de 10 millones de jugadores simultáneos y marcó el inicio de una tendencia donde los videojuegos sirvieron como escenarios virtuales para conciertos. <br>
+A partir de este evento, otros artistas como Travis Scott y Ariana Grande realizaron espectáculos similares en Fortnite. <br> </p>
+                <img src="marsh.JPG" class="imagen-modo">
+            </article>
+
+            <article class="post">
+                <h3>FNCS (Fortnite Champion Series)</h3>
+                <p>La Fortnite Champion Series (FNCS) es la principal competencia de esports de Fortnite. <br>
+Desde su inicio en 2019, la FNCS ha evolucionado con diferentes formatos y reglas cada temporada. <br><br>
+
+En 2025, la FNCS implementó un nuevo sistema de competición basado en Majors. <br>
+Los jugadores deben clasificarse a través de torneos regionales para avanzar a las finales internacionales. <br>
+El torneo ofrece un premio acumulado de más de $8 millones de dólares. <br><br>
+
+El evento culminante del año es el FNCS Global Championship, donde los mejores jugadores del mundo compiten por el título de campeones definitivos de Fortnite. <br>
+La competencia se transmite en vivo con comentarios profesionales y análisis de las partidas, aumentando la popularidad de Fortnite en los esports. <br></p>
+                <img src="fncs.JPG" class="imagen-modo">
+            </article>
+        </section>
+
+        <section id="comparacion" class="seccion">
+            <h2>Crecimiento de Fortnite</h2>
+            <table>
+                <tr><th>Año</th><th>Jugadores Activos</th><th>Eventos Clave</th></tr>
+                <tr><td>2017</td><td>10M</td><td>Lanzamiento</td></tr>
+                <tr><td>2018</td><td>78M</td><td>Evento del Cubo</td></tr>
+                <tr><td>2019</td><td>250M</td><td>El Agujero Negro</td></tr>
+                <tr><td>2020</td><td>350M</td><td>Colaboración con Marvel</td></tr>
+                <tr><td>2023</td><td>500M</td><td>Actualización Unreal Engine 5</td></tr>
+            </table>
+        </section>
+
+        <section id="modos" class="seccion">
+            <h2>Modos de Juego</h2>
+            <div class="modo">
+                <h3>Solitario</h3>
+                <img src="solo.JPG" alt="Modo Solitario" class="imagen-modo">
+                <p>Juega solo y demuestra tus habilidades contra 99 jugadores.</p>
+            </div>
+            <div class="modo">
+                <h3>Dúos</h3>
+                <img src="duo.JPG" alt="Modo Dúos" class="imagen-modo">
+                <p> Juega con tu aigo y persigue la Victoria Royal ante 100 jugadores.</p>
+            </div>
+            <div class="modo">
+                <h3>Tríos</h3>
+                <img src="trio.JPG" alt="Modo Tríos" class="imagen-modo">
+                <p>Juega en un equipo de tres jugadores y coordina estrategias.</p>
+            </div>
+            <div class="modo">
+                <h3>Escuadrones</h3>
+                <img src="escuadron.JPG" alt="Modo Escuadrones" class="imagen-modo">
+                <p>Forma un escuadrón de cuatro jugadores y domina la partida.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Fortnite Salvador y Landon</p>
+    </footer>
+
+    <script>
+        function mostrarSeccion(id) {
+            document.querySelectorAll('.seccion').forEach(seccion => seccion.classList.remove('activa'));
+            document.getElementById(id).classList.add('activa');
+        }
+
+        // Slider automático
+        let index = 0;
+        function cambiarImagen() {
+            let slides = document.querySelectorAll('.slide');
+            slides.forEach((img, i) => {
+                img.style.display = (i === index) ? "block" : "none";
+            });
+            index = (index + 1) % slides.length;
+        }
+        setInterval(cambiarImagen, 3000);
+    </script>
+
+    <script src="je.js"> </script>
+
+</body>
+</html>
